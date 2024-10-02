@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{simpleinvoice,eurosym}
+\pagenumbering{gobble}
+
+\begin{document}
+\setinvoicetitle{Rechnung Nr: }
+\setreceivername{Musterfirma}
+\setreceiveraddress{Musterstr. 1\\ D - 00000 Musterstadt}
+\setname{Max Mustermann}
+\setaddress{Beispielstr. 1 \\ 00000 Beispielstadt}{Beispielstr. 1 \\ 00000 Beispielstadt}
+\setphonenumber{0170/12345678}
+\setemail{max@mustermann.de}
+\setaccountnumber{IBAN: DE00 0000 0000 0000 00}
+\setinvoicedate{\today}\setinvoicenumber{42020120}\additem{Zuarbeit am: 13.06.2024}{37.50 \euro}\additem{Zuarbeit am: 22.06.2024}{30.00 \euro}\additem{Zuarbeit am: 26.08.2024}{30.00 \euro}\additem{Zuarbeit am: 01.09.2024}{60.00 \euro}\additem{Zuarbeit am: 28.09.2024}{45.00 \euro}\additem{Zuarbeit am: 29.09.2024}{180.00 \euro}\settotal{382.50 \euro}\makeinvoice \end{document}

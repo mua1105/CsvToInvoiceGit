@@ -1,0 +1,16 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{simpleinvoice,eurosym}
+\pagenumbering{gobble}
+
+\begin{document}
+\setinvoicetitle{Rechnung Nr: }
+\setreceivername{Musterfirma}
+\setreceiveraddress{Musterstr. 1\\ D - 00000 Musterstadt}
+\setname{Max Mustermann}
+\setaddress{Beispielstr. 1 \\ 00000 Beispielstadt}{Beispielstr. 1 \\ 00000 Beispielstadt}
+\setphonenumber{0170/12345678}
+\setemail{max@mustermann.de}
+\setaccountnumber{IBAN: DE00 0000 0000 0000 00}
+\setinvoicedate{\today}
